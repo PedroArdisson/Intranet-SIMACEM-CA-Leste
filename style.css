@@ -13,6 +13,7 @@ body {
 }
 
 .container-head {
+    position: relative;
     display: flex;
     align-items: center;   /* centraliza verticalmente */
     gap: 20px;             /* espaço entre imagem e textos */
@@ -40,6 +41,24 @@ body {
     font-size: 18px;
     font-weight: bold;
 }
+
+.home-button {
+    position: absolute;
+    top: 20px;   /* ajusta conforme necessário */
+    right: 20px;
+}
+
+.home-button img {
+    width: 50px;   /* tamanho da casinha */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.home-button img:hover {
+    transform: scale(1.1);
+}
+
 
 .button {
     text-align: center;
